@@ -7,6 +7,7 @@ A Python-based supermarket billing system that allows customers to add items to 
 2. **Run the Code:** Execute the code in a Python environment (e.g., Jupyter Notebook, VS Code, or directly from the command line).
 3. **Follow the Prompts:** The program will prompt you to enter your name, phone number, and then add items to your cart. After adding items, you can print the receipt to see the final bill.
 
+## Code is as shown as below followed by the Output recieved
 
 ```python
 products = {
