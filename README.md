@@ -8,8 +8,7 @@ A Python-based supermarket billing system that allows customers to add items to 
 3. **Follow the Prompts:** The program will prompt you to enter your name, phone number, and then add items to your cart. After adding items, you can print the receipt to see the final bill.
 
 
-```
-python
+```python
 products = {
     "Chips": 20,
     "Cola": 40,
@@ -109,7 +108,8 @@ while True:
     print("\n")
     next_person = input("is there a next person in the queue? (yes/no): ").lower()
     if next_person in ["no","n"]:
-        break```
+        break
+```
 
 
 ## Example Output
