@@ -7,3 +7,106 @@ A Python-based supermarket billing system that allows customers to add items to 
 2. **Run the Code:** Execute the code in a Python environment (e.g., Jupyter Notebook, VS Code, or directly from the command line).
 3. **Follow the Prompts:** The program will prompt you to enter your name, phone number, and then add items to your cart. After adding items, you can print the receipt to see the final bill.
 
+
+```python
+products = {
+    "Chips": 20,
+    "Cola": 40,
+    "Apples": 100,
+    "Bananas": 30,
+    "Notebook": 50,
+    "Milk": 60,
+    "Bread": 25,
+    "Eggs": 80,
+    "Cheese": 120,
+    "Butter": 70,
+    "Chocolate": 45,
+    "Orange Juice": 70,
+    "Tomatoes": 35,
+    "Cucumbers": 25,
+    "Potatoes": 40,
+    "Carrots": 30,
+    "Shampoo": 150,
+    "Soap": 35,
+    "Toothpaste": 75,
+    "Rice": 200,
+    "Pasta": 60,
+    "Coffee": 110,
+    "Tea": 70,
+    "Sugar": 50,
+    "Salt": 20,
+    "Cooking Oil": 140,
+    "Flour": 60,
+    "Biscuits": 30,
+    "Yogurt": 45,
+    "Ice Cream": 90
+}
+
+while True:
+    cart = {}
+    amount = 0
+    name = input("enter name: ").title()
+    ph_no = input("enter phone number: ")
+    print("-"*60)
+    print("enter quantity and price")
+    
+    while True:
+        quantity = float(input("enter quantity: "))
+        while True:
+            p_name = input("enter item name: ").title()
+            if p_name not in products.keys():
+                print("try again with the correct spelling")
+            else:
+                break
+        amount += products[p_name] * quantity
+        cart[p_name] = products[p_name],"x",quantity
+        repeat_item = input("do you want to add more items?(yes/no) ").lower()
+        if repeat_item in ["no","n"]:
+            break
+    discount = 0
+    
+    if amount <= 500:
+        discount = 0.05
+        act_amount = amount - (amount* discount)
+    elif amount <= 1000:
+        discount = 0.07
+        act_amount = amount - (amount* discount)
+    elif amount<= 5000:
+        distinct = 0.15
+        act_amount = amount - (amount* discount)
+    else:
+        discount = 0.2
+        act_amount = (amount - discount)
+        
+    print("-"*60)
+
+    print("SUPER MARKET STORE".center(50))
+    print("Carter Road, Andheri West, Phone: 321-356-401".center(50))
+    print("-"*60)
+    print("-"*60)
+    
+    print("Customer Name     :   ", name)
+    print("Customer Phone    :   ", ph_no)
+    print("-"*60)
+    for i,j in cart.items():
+        p,x,q = j
+        print(i, ":",p,x,q)
+
+    print("-"*60)
+            
+    print("Total bill        :  ", "₹",amount)
+    print("Discount Applied  :  ", discount*100, "%OFF")
+    print("Actual Amount     :  ", "₹",act_amount)
+    print("")
+    print("-"*60)
+    
+    print ("\n")
+    print("Thankyou For Shopping with us ^_^".center(50))
+    print("\n")
+    print("-"*60)
+    print("-"*60)
+    print("\n")
+    next_person = input("is there a next person in the queue? (yes/no): ").lower()
+    if next_person in ["no","n"]:
+        break
+
