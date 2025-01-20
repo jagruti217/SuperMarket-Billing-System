@@ -109,13 +109,12 @@ while True:
     print("\n")
     next_person = input("is there a next person in the queue? (yes/no): ").lower()
     if next_person in ["no","n"]:
-        break
+        break```
 
 
 ## Example Output
 
-```
-enter name:  Ayushi
+```enter name:  Ayushi
 enter phone number:  9892363538
 ------------------------------------------------------------
 enter quantity and price
