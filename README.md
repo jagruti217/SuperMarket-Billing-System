@@ -110,3 +110,53 @@ while True:
     if next_person in ["no","n"]:
         break
 
+
+## Example Output
+
+```
+enter name:  Ayushi
+enter phone number:  9892363538
+------------------------------------------------------------
+enter quantity and price
+enter quantity:  5
+enter item name:  Rice
+do you want to add more items?(yes/no)  Yes
+enter quantity:  4
+enter item name:  Tea
+do you want to add more items?(yes/no)  Yes
+enter quantity:  3
+enter item name:  Coffee
+do you want to add more items?(yes/no)  Yes
+enter quantity:  7
+enter item name:  Pasta
+do you want to add more items?(yes/no)  Yes
+enter quantity:  2
+enter item name:  Shampoo
+do you want to add more items?(yes/no)  no
+------------------------------------------------------------
+                SUPER MARKET STORE                
+  Carter Road, Andheri West, Phone: 321-356-401   
+------------------------------------------------------------
+------------------------------------------------------------
+Customer Name     :    Ayushi
+Customer Phone    :    9892363538
+------------------------------------------------------------
+Rice : 200 x 5.0
+Tea : 70 x 4.0
+Coffee : 110 x 3.0
+Pasta : 60 x 7.0
+Shampoo : 150 x 2.0
+------------------------------------------------------------
+Total bill        :   ₹ 2330.0
+Discount Applied  :   0 %OFF
+Actual Amount     :   ₹ 2330.0
+
+------------------------------------------------------------
+
+
+        Thankyou For Shopping with us ^_^         
+
+
+------------------------------------------------------------
+------------------------------------------------------------
+
