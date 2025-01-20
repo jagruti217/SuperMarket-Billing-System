@@ -113,8 +113,7 @@ while True:
 
 ## Example Output
 
-```
-enter name:  Ayushi
+```enter name:  Ayushi
 enter phone number:  9892363538
 ------------------------------------------------------------
 enter quantity and price
