@@ -8,7 +8,8 @@ A Python-based supermarket billing system that allows customers to add items to 
 3. **Follow the Prompts:** The program will prompt you to enter your name, phone number, and then add items to your cart. After adding items, you can print the receipt to see the final bill.
 
 
-```python
+```
+python
 products = {
     "Chips": 20,
     "Cola": 40,
@@ -157,5 +158,6 @@ Actual Amount     :   ₹ 2330.0
 
 
 ------------------------------------------------------------
-------------------------------------------------------------```
+------------------------------------------------------------
+```
 
